@@ -1,0 +1,81 @@
+1 часть, уровень Novice
+1)
+  122  history
+  123  cat > test.txt
+  124  cat test.txt
+  125  ls
+  126  mkdir test_dir
+  127  ls
+  128  cp test.txt test_dir/
+  129  ls
+  130  cd test_dir/
+  131  ls
+  132  cd ..
+  133  mkdir test_dir2
+  134  ls
+  135  cp test_dir test_dir2/
+  136  ls
+  137  cp test_dir/ test_dir2/
+  138  mv test_dir/ test_dir2/
+  139  ls
+  140  cd test_dir2
+  141  ls
+  142  rm test_dir/
+  143  rm -r test_dir
+  144  ls
+  145  cd ..
+  146  ls
+  147  cat history > inf_labs/command_log.txt
+  148  cat ~/.bash_history > inf_labs/command_log.txt
+  149  history
+2)
+/home/dfcz
+3)
+возвращает нас в домашнюю директорию
+4)
+less не нуждается в чтении всего файла перед стартом и в результате быстрее работает с большими файлами.
+
+2 часть, уровень Advanced
+
+  158  wget http://factorized.net/crusoe.txt
+  159  ls
+  175  cd
+  176  sudo find /tmp -name "*.txt"
+  178  ls
+  179  cd Documents/
+  180  ls
+  181  grep -r "friday" crusoe.txt
+  182  grep  -rin "friday" crusoe.txt
+  183  echo hello world
+  184  echo hello world > test.txt
+  185  ls
+  186  cat test.txt
+  187  cat ls > file_list.txt
+  188  ls > file_list.txt
+  189  cat file_list.txt 
+  190  cd /
+  192  sudo find -name "*.txt"
+  193  history
+
+3 часть, уровень Expert
+
+  194  cd
+  195  cd Documents/
+  196  grep -o 'Friday' crusoe.txt | uniq -c
+  197  cat crusoe.txt | sed 's/Friday/Saturday/g' > crusoe2.txt 
+  198  ls
+  199  history
+  (Подсчитать сумму чисел по столбцам)
+  200  nano test.txt
+  201  cat test.txt
+  (добавил в файл числа в два столбца и несколько строк)
+  210  cat test.txt | awk 'BEGIN {sum1=0; sum2=0}
+           {sum1+=$1; sum2+=$2; printf("sum1: %i sum2: %i NR: %d\n",sum1, sum2, NR); }
+     END {printf "sum1: %i sum2 : %i \n",sum1,sum2}'
+  (печатает так же промежуточные действия)
+
+
+
+
+
+
