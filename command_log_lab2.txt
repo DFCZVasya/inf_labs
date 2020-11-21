@@ -1,0 +1,28 @@
+1) Novice
+   72  mkdir test
+   73  cd test
+   74  ls
+   75  touch .txt
+   76  ls
+   77  ls -a
+   78  cd
+   79  ls
+   80  ls -a
+   81  find .*
+2) Advanced
+   88  which cat
+   89  whereis cat
+   90  whereis less
+   91  whereis grep
+   92  whereis find
+   93  echo $PATH
+   94  nano main.c
+   95  gcc main.c
+   96  sudo apt install gcc
+   97  gcc main.c
+   98  ./a.out
+   99  cd ..
+  100  ./inf_labs/a.out
+  101  export PATH=$PATH:$HOME/inf_labs/
+  102  echo $PATH
+
